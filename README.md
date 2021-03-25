@@ -1,4 +1,5 @@
 ## 资产云后端SDK for .NET
+![Nuget](https://img.shields.io/nuget/v/AssetCloud.AssetCloudSDK?color=green)
 
 SDK基于 .NET Standard 2.0 开发，支持 .NET Framework 4.6.1+（推荐4.7.2+） / .NET Core 2.0+ / .NET 5。
 
