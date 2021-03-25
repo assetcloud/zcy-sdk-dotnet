@@ -4,15 +4,26 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>LoveKicher</Authors>
-    <PackageId>LoveKicher.AssetCloudSDK</PackageId>
-    <RootNamespace>LoveKicher.AssetCloudSDK</RootNamespace>
+    <PackageId>AssetCloud.AssetCloudSDK</PackageId>
+    <RootNamespace>AssetCloud.AssetCloudSDK</RootNamespace>
     <LangVersion>8.0</LangVersion>
     <NullableContextOptions>safeonly</NullableContextOptions>
+    <Company>AssetCloud</Company>
+    <Description>资产云 .NET SDK</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
     <PackageReference Include="System.Text.Json" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

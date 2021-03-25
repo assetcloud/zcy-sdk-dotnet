@@ -1,6 +1,6 @@
 using NUnit.Framework;
-using LoveKicher.AssetCloudSDK;
-using LoveKicher.AssetCloudSDK.Util;
+using AssetCloud.AssetCloudSDK;
+using AssetCloud.AssetCloudSDK.Util;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

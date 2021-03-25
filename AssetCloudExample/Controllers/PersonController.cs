@@ -1,4 +1,4 @@
-﻿using LoveKicher.AssetCloudSDK;
+﻿using AssetCloud.AssetCloudSDK;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;

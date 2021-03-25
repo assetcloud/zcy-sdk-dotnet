@@ -4,7 +4,7 @@ using System.Text;
 using System.Linq;
 using crypto = System.Security.Cryptography;
 
-namespace LoveKicher.AssetCloudSDK.Util
+namespace AssetCloud.AssetCloudSDK.Util
 {
     internal static class HashUtil
     {

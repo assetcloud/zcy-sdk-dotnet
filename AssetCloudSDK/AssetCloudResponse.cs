@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LoveKicher.AssetCloudSDK
+namespace AssetCloud.AssetCloudSDK
 {
     public class AssetCloudResponse<T>
     {

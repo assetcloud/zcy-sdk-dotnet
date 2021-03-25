@@ -1,4 +1,4 @@
-using LoveKicher.AssetCloudSDK;
+using AssetCloud.AssetCloudSDK;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -42,7 +42,7 @@ namespace AssetCloudExample
                 BaseUrl = Configuration.GetSection("assetcloud:url").Value,
                 ThrowsOnFailureResponseCode = true
             };
-            Console.WriteLine($"×Ê²úÔÆSDK URL: {defaultConfig.BaseUrl}, AppKey: {defaultConfig.AppKey}");
+            Console.WriteLine($"ï¿½Ê²ï¿½ï¿½ï¿½SDK URL: {defaultConfig.BaseUrl}, AppKey: {defaultConfig.AppKey}");
             services.AddSingleton(defaultConfig);
             
         }

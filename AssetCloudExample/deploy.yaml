@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    k8s.kuboard.cn/ingress: 'false'
+    k8s.kuboard.cn/service: none
+    k8s.kuboard.cn/workload: assetcloud-example
+  labels:
+    k8s.kuboard.cn/layer: svc
+    k8s.kuboard.cn/name: assetcloud-example
+  name: assetcloud-example
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s.kuboard.cn/layer: svc
+      k8s.kuboard.cn/name: assetcloud-example
+  template:
+    metadata:
+      labels:
+        k8s.kuboard.cn/layer: svc
+        k8s.kuboard.cn/name: assetcloud-example
+    spec:
+      containers:
+        - args:
+            # 更换为实际的nacos地址
+            - '--Nacos:ServerAddresses:0=nacos.default.svc.cluster.local:8848'
+          image: registry.cn-hangzhou.aliyuncs.com/homolive/assetcloudexample
+          imagePullPolicy: Always
+          name: assetcloud-example
+          ports:
+            - containerPort: 80
+              protocol: TCP
+            - containerPort: 443
+              protocol: TCP
+      dnsConfig: {}
+      restartPolicy: Always
+
