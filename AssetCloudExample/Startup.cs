@@ -42,7 +42,7 @@ namespace AssetCloudExample
                 BaseUrl = Configuration.GetSection("assetcloud:url").Value,
                 ThrowsOnFailureResponseCode = true
             };
-            Console.WriteLine($"�ʲ���SDK URL: {defaultConfig.BaseUrl}, AppKey: {defaultConfig.AppKey}");
+            Console.WriteLine($"获取到资产云SDK URL: {defaultConfig.BaseUrl}, AppKey: {defaultConfig.AppKey}");
             services.AddSingleton(defaultConfig);
             
         }
